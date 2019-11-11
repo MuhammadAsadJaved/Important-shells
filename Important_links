@@ -1,0 +1,95 @@
+# Installation
+
+See http://caffe.berkeleyvision.org/installation.html for the latest
+installation instructions.
+
+Check the users group in case you need help:
+https://groups.google.com/forum/#!forum/caffe-users
+
+-----------------------------------------------------------------------------
+To check CudNN version 
+$ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
+____________________________________________________________________________
+
+Discover which ubuntu driver number you need for system.:
+
+$ sudo ubuntu-drivers devices
+
+____________________________________________________________________________
+
+CUDA and CuDNN recomendations for cafee 
+
+It is said that caffe i scomatible to CUDA 9.1 and cuDNN 7.1
+
+____________________________________________________________________________
+
+Download and install OpenCV 
+to download 
+wget https://github.com/opencv/opencv/archive/3.4.0.zip -O opencv-3.4.0.zip
+
+to install 
+
+https://www.pytorials.com/how-to-install-opencv340-on-ubuntu1604/
+
+----------------------------------------------------------------------------------
+
+Copy multiple files corresponding to files in a folder to another files.  e.g  compy all images from folder A to folder B which have same 
+XML names in folder B
+
+https://blog.csdn.net/fqlovetb/article/details/84334459
+
+-----------------------------------------------------------------------------------
+
+get jetson TX2 board unique information 
+
+$ cat /proc/cmdline
+
+which returns unique ID like this.
+
+androidboot.serialno=0335115020673
+
+-----------------------------------------------------------------------------------
+convert coco dataset .json labels to xmls. 
+
+https://github.com/CasiaFan/Dataset_to_VOC_converter
+-----------------------------------------------------------------------------------
+
+mobile net link github 
+https://github.com/eric612/MobileNet-YOLO
+-----------------------------------------------------------------------------
+
+Caffe installation 
+
+https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-Ubuntu/
+
+continue from make opencv
+-----------------------------------------------------------------------------
+check CudNN version 
+
+https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation
+
+ubuntu and cuda details 
+
+https://tech.amikelive.com/node-669/guide-installing-cuda-toolkit-9-1-on-ubuntu-16-04/
+cuda details, remove old version , install new
+
+https://tech.amikelive.com/node-859/installing-cuda-toolkit-9-2-on-ubuntu-16-04-fresh-install-install-by-removing-older-version-install-and-retain-old-version/
+
+cuda + cudnn installation 
+
+https://peshmerge.io/how-to-install-cuda-9-0-on-with-cudnn-7-1-4-on-ubuntu-18-04/
+-----------------------------------------------------------------------------
+Caffe installation 
+https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide
+
+https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-Ubuntu/
+-----------------------------------------------------------------------------
+RGB image processing. 
+
+https://towardsdatascience.com/deep-learning-unbalanced-training-data-solve-it-like-this-6c528e9efea6?source=post_page---------------------------&gi=2c28e8c9a026
+
+-----------------------------------------------------------------------------
+
+
+
