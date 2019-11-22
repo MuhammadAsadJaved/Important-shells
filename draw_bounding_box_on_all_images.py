@@ -44,7 +44,8 @@ for xmlFile in xmlFiles:
     while b<1:
 
         while n<len(xmax):
-           cv2.rectangle(img, (xmin[n], ymin[n]), (xmax[n], ymax[n]), (255, 255, 0), 2)
+           cv2.rectangle(img, (xmin[n], ymin[n]), (xmax[n], ymax[n]), (255, 255, 0), 2) #Draw boundig boxes 
+           cv2.putText(img, classes[n], (int(xmin[n]), int(ymin[n])), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 255, 255), lineType=cv2.LINE_AA)  #Draw corresponding labels on the bounding boxes from xml.
            n += 1
 
         count+=1
