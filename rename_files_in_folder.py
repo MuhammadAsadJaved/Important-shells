@@ -7,8 +7,9 @@ i.e according to this the first file will be 000001 and so on.
 """
 
 import os
-#Files/images directory 
-path = "/home/fqlovetb/data"
+path = "/home/fqlovetb/data"   #Files/images directory . Note it will rename the files in the same folder. so create a backup
+                               #if you want to keep original file names as well
+
 filelist = os.listdir(path)
 count=0
 for file in filelist:
