@@ -1,4 +1,6 @@
-
+#Read some files froma folder and coppy relevent files or images from another folder. 
+#For example we want to copy images corresponding to 1.xml 2.xml 3.xml ..n.xml from a images folder which contains
+#thousands of images. so we do not need to search corresponding images manually. 
 import cv2
 import xml.etree.ElementTree as ET
 import glob
