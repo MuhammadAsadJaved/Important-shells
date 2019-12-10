@@ -5,7 +5,7 @@
 import os
 import xml.etree.ElementTree as ET
 
-origin_ann_dir = 'person/'  #xmls directory
+origin_ann_dir = 'input_xml/'  # Path to directory that contains xml files. 
 
 persons =0
 cars = 0
