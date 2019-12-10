@@ -5,9 +5,9 @@ import scipy.misc
 import os
 import matplotlib.pyplot as plt
  
-path = "/home/littro/npyToimg/ThermalWorld_ReID_train_v3_0/IR_32/0/"
+path = "numpy_files/"  #path to numpy files folder
 npy_list = os.listdir(path)
-save_path = "/home/littro/npyToimg/ThermalWorld_ReID_IR_32_0_output/"
+save_path = "numpy_output/" #path to save coverted images
 #output_name = os.path.splitext(os.path.basename("output"))[0]  
 if not os.path.exists(save_path):
     os.mkdir(save_path)
