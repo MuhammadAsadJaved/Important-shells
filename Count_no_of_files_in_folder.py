@@ -3,7 +3,7 @@
 import os 
 
 
-Filespath = "CroppedFinalImgs"
+Filespath = "CroppedFinalImgs"  #Input directory 
 
 no =len(os.listdir(Filespath))
 
