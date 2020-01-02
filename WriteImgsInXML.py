@@ -4,7 +4,7 @@
 #This is used to show all required images in xml file for the comparison of some outputs.
 
 # 1-put input images in the images folder and all other images in some other folders
-#2- Change line 40 to 44 "input, org etc" with your other images name.
+#2- Change line 47 to 51 "input, org etc" with your other images name.
 #3- run the code.  it will create xml with 3 coulms and rows=no of input images. you can change accordingly. just compy and paste idex.write line
 # to increate no of colums.
 #Now check index.html in browser, it will show only first colums,  copy images from other folder to input images folder and refresh the page. it will show all.
