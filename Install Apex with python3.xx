@@ -1,0 +1,11 @@
+it will install python-only build. 
+
+$ git clone https://github.com/NVIDIA/apex
+$ cd apex
+$ sudo pip3 install -v --no-cache-dir ./
+
+
+
+for installation with all functionalities run , but it throw error for me.
+
+$ sudo pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./ --user
