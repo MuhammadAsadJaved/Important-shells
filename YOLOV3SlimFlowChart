@@ -25,3 +25,5 @@ Step 3: Rrune the model
 Step 4 :
 
 Train again using Alexey Ab darknet repo using generated prune.cfg and prune.weights with step 3.
+> cd darknet
+> ./darknet detector train data/boat.data cfg/prune.cfg  backup/prune.weights 
