@@ -1,5 +1,7 @@
 Step 1 :
+
 Trainin Darknet with 4 classes using AlexeyAB repo normally and get last weights. 
+
 Step 2 :
 
 Training with sparstiy using https://github.com/erikguo/yolov3
