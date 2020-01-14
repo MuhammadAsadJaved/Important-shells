@@ -1,3 +1,10 @@
+clone YOLOV3 
+> git clone 
+
+> git checkout ktian08-hyp & git pull
+
+
+
 Step 1 :
 
 Trainin Darknet with 4 classes using AlexeyAB repo normally and get last weights. 
@@ -16,8 +23,14 @@ check tensorboard
 > tensorboard --logdir=runs
 Can also detect for the detection.
 
-After finish training convert .pt weights to .weights  using 
+After finish training convert .pt weights to .weights  using https://github.com/erikguo/yolov3
 > python3 convert_pt_weights.py cfg/yolov3-boat.cfg  weights/best.pt 
+
+or convert .pt weights to .weights using https://github.com/ultralytics/yolov3/issues
+
+> python3  -c "from models import *; convert('cfg/prune5_boat.cfg', 'weights/prune5_boat.pt')"
+
+
 
 Step 3: Prune the model 
 
