@@ -26,7 +26,7 @@ Can also detect for the detection.
 After finish training convert .pt weights to .weights  using https://github.com/erikguo/yolov3
 > python3 convert_pt_weights.py cfg/yolov3-boat.cfg  weights/best.pt 
 
-or convert .pt weights to .weights using https://github.com/ultralytics/yolov3/issues
+or convert .pt weights to .weights using https://github.com/ultralytics/yolov3/
 
 > python3  -c "from models import *; convert('cfg/prune5_boat.cfg', 'weights/prune5_boat.pt')"
 
@@ -42,3 +42,14 @@ Step 4 :
 Train again using Alexey Ab darknet repo using generated prune.cfg and prune.weights with step 3.
 > cd darknet
 > ./darknet detector train data/boat.data cfg/prune.cfg  backup/prune.weights 
+
+
+Additional 
+To run on video using https://github.com/ultralytics/yolov3/
+> conda activate tracking
+> cd yolov3_ultralytics
+to run on single image or video
+> python detect_boat.py  --source vidoe.mp4     //output will be saved in  output folder
+
+to run on all images and videos in a folder 
+>python detect_boat.py --source /folder name   //output will be saved in  output folder
