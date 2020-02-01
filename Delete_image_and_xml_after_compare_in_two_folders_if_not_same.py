@@ -1,6 +1,6 @@
 """
 This shell is used to compare files in one folder with files in ohter folder. if they are not same it will delete files that 
-are not same. i.e  check images and xmls and delete if images do not have corresponding xmls and voice virsa.
+are not same. i.e  check images and xmls and delete if images do not have corresponding xmls and vice virsa.
 """
 
 import os 
