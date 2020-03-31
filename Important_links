@@ -117,3 +117,13 @@ Hundrads of datasets
 
 https://github.com/awesomedata/awesome-public-datasets
 ------------------------------------------------------------------------------
+cut video using ffmpeg
+
+ffmpeg -ss 5 -i traffic1.mp4 -t 60 -c copy  output2.mp4
+
+where 5 is starting second point and -t 60 is duration of video.   -t can replace with -to to mention the ending point.
+
+convert video to imges
+
+ffmpeg -i MVI_1645_VIS.avi -vf fps=1/5 -qmin 1  -q:v 1  o%d.jpg
+--------------------------------------------------------------------------------
