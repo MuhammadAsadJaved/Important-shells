@@ -1,0 +1,8 @@
+How to create dataset 
+Run in VOC2007 directory 
+
+1- python CreateImageSets.py
+Run from MobileNet-YOLO-master directory 
+
+2- bash data/asad-personLaying/VOC2007/creat_list.sh 
+3- bash data/asad-personLaying/VOC2007/create_data.sh
