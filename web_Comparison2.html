@@ -1,0 +1,116 @@
+ <!DOCTYPE html> 
+  <html>
+  <head>
+<title>BOAT DETECTION MODELS REPORT</title>
+ </head>
+ <body>
+<center>
+    <h1>BOAT DETECTION MODELS COMPARISON</h1>
+</center>
+
+<table border="5" bordercolor="green" align="center">
+    <tr>
+        <th colspan="7">10 Visual and NIR images are used for comparison</th> 
+    </tr>
+    <tr>
+        <th>Original Image</th>
+        <th>TensorFlow_FasterRCNN</th>
+        <th>TensorFlow_SSD_ResNet</th>
+        <th>YOLOV2_Full</th>
+        <th>YOLOV2_Tiny</th>
+        <th>YOLOV3_Visual</th>
+        <th>YOLOV3_NIR</th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/1.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/1_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/1_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/1_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/1_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/1_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/1_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/2.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/2_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/2_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/2_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/2_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/2_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/2_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/3.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/3_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/3_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/3_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/3_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/3_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/3_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/4.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/4_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/4_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/4_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/4_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/4_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/4_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/5.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/5_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/5_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/5_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/5_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/5_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/5_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/6.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/6_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/6_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/6_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/6_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/6_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/6_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/7.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/7_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/7_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/7_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/7_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/7_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/7_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/8.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/8_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/8_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/8_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/8_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/8_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/8_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/9.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/9_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/9_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/9_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/9_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/9_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/9_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+    <tr>
+        <td><img src="test_images_boat/10.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/10_fasterRCNN_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_TensorFlow/10_ssd_resnet50_output.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/10_config_full_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_boat_yolov2/10_config_tiny_yolo.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/10_darknet_visual.jpg" alt="" border=3 height=300 width=500></img></th>
+        <td><img src="output_DarknetYOLOv3/10_darknet_infrared.jpg" alt="" border=3 height=300 width=500></img></th>
+    </tr>
+</table>
+  </body>
+  <html>
