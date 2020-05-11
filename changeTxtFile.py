@@ -1,8 +1,10 @@
+#this file is used to read and change something from all .txt files from a folder 
+#and write new changed .txt files in another folder.
 
 import os
-files_dir = './f/'
+files_dir = './f/' #input directory 
 
-out_dir = './out/'
+out_dir = './out/' # first output directory for changed .txt
 if not os.path.exists(out_dir):
     os.mkdir(out_dir)
 files_list = os.listdir(files_dir)
@@ -24,7 +26,7 @@ for files in files_list:
         out_file.write(data)
         #print(out_file)
 
-out_dir2 = './out2/'
+out_dir2 = './out2/' # second output directory for second changes .txt files
 if not os.path.exists(out_dir2):
     os.mkdir(out_dir2)
 
