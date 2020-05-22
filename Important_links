@@ -127,7 +127,7 @@ convert video to imges
 
 ffmpeg -i MVI_1645_VIS.avi -vf fps=1/5 -qmin 1  -q:v 1  o%d.jpg
 
-convert one image extension to another , i.e  .jpg to .png . 
+#convert one image extension to another , i.e  .jpg to .png . 
 install librarey  
 
 $ sudo apt-get install imagemagick
@@ -136,4 +136,20 @@ then run for a batch of files.
 
 $ for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done
 
+#delete all files with a certain extenstion from folder and subfolders
+
+cd <dir>
+#This will only delete in master folder and leave rest  , -maxdepth 1 means only this folder, 
+#you can change this paramter to 2 and so on if you want to delete folder/subfolder/sub sub folder etc. 
+
+$ find . -maxdepth 1 -type f -iname \*.jpg -delete   
+ #Note this will delete files from folder and it's sub folder, so first use command without -delete to make sure. 
+$ find . -type f -iname \*.jpg -delete   
+
+
+
 --------------------------------------------------------------------------------
+
+find chinese fonts in ubuntu 
+
+$ fc-list :lang=zh
