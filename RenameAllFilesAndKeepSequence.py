@@ -1,3 +1,6 @@
+#This program is used to copy all the files and xml files from two folders and 
+#paste with new names in new location. The name of xml and images will be new but sequence will be same. 
+
 import os, shutil
 
 
@@ -17,11 +20,11 @@ def batchRenameFile(srcDirNamexml, srcDirNameimg, destDirNamexml, destDirNameimg
        i= i+ 1
 
 
-srcDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/annN/1/'
-srcDirNameimg = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/imgN/1/'
+srcDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/annN/1/'  #input xmls folder
+srcDirNameimg = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/imgN/1/'   #input images folder
 
-destDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/3'
-destDirNameimg =  '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/4'
+destDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/3'    #output xmls folder
+destDirNameimg =  '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/4'  #output images folder
 
 
 batchRenameFile(srcDirNamexml,srcDirNameimg, destDirNamexml, destDirNameimg)
