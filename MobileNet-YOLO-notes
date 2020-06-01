@@ -6,3 +6,19 @@ Run from MobileNet-YOLO-master directory
 
 2- bash data/asad-personLaying/VOC2007/creat_list.sh 
 3- bash data/asad-personLaying/VOC2007/create_data.sh
+
+
+Chnage train.prototxt and test.prototxt for custom classes . 
+        change number of output in these three layers according to the following formula
+        num_output:  
+
+        (5+noOfClasses) x 3
+        so for 1 class it is num_output: 18 
+        for 80 classes it is num_output: 255
+        
+    bottom: "layer81-conv"
+    
+    bottom: "layer93-conv"
+    
+    
+    bottom: "layer105-conv"
