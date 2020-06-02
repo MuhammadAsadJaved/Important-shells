@@ -9,3 +9,16 @@ oepn terminal in ubuntu
  >> xdg-open 181226300.jpg      xdg-open to open a file. 
  
  >> ctrl + d to exit
+
+
+>> copy files from one system to other .
+copy from B to A while loged in on A. 
+where scp is command fro copy ,  the second part is login details and file need to be coppied , the third part is destination.
+$scp littro@192.168.1.13:./darknet-master/DualBand_backup/yolov3-DualBand_last.weights    ./yolov3_erikguo/dualBand2019/
+
+
+copy from A to B while loged in on A
+
+where scp is command for copy, second is file need to be coppied,  third is destination with username.
+
+$scp /path/to/file   username@a:/path/to/destination
