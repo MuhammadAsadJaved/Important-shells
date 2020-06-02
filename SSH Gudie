@@ -3,7 +3,7 @@ oepn terminal in ubuntu
  >> ssh -X littro@192.168.1.13     #this is the name of the computer , 
  then enter user name and passport   littro
  
- Now you can control that system normaly on yout screen
+ Now you can control that system normaly on your screen
  
  >> cd xyzDirectory 
  >> xdg-open 181226300.jpg      xdg-open to open a file. 
