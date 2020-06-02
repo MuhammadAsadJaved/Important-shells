@@ -1,7 +1,7 @@
 oepn terminal in ubuntu 
 
  >> ssh -X littro@192.168.1.13     #this is the name of the computer , 
- then enter user name and passport   littro
+ then enter the password   for example   user_xyz
  
  Now you can control that system normaly on your screen
  
