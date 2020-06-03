@@ -1,4 +1,12 @@
 oepn terminal in ubuntu 
+server 1 (near me) IP
+192.168.1.47
+or 
+192.168.1.1
+
+server 2 (in meeting room ) IP
+92.168.1.13
+
 
  >> ssh -X xyz@192.168.1.13     #this is the name of the computer , 
  then enter the password   for example   user_xyz
