@@ -157,3 +157,9 @@ $ find . -maxdepth 1 -type f -print0 | head -z -n 100 | xargs -0 -r -- cp -t "/m
 find chinese fonts in ubuntu 
 
 $ fc-list :lang=zh
+----------------------------------------------------------------------------------------
+
+How to get latest file from a folder 
+
+BACKUPDIR=$(ls -td /home/littro/MobileNet-YOLO-master/models/darknet_yolov3/securityVIS/*.solverstate | head -1)
+$BACKUPDIR
