@@ -163,3 +163,22 @@ How to get latest file from a folder
 
 BACKUPDIR=$(ls -td /home/littro/MobileNet-YOLO-master/models/darknet_yolov3/securityVIS/*.solverstate | head -1)
 $BACKUPDIR
+
+-----------------------------------------------------------------------------------------
+How to split file name , extension and full path using python 
+
+https://stackoverflow.com/questions/7304117/split-filenames-with-python
+
+>>> f = 'C:\\X\\Data\\foo.txt'
+>>> import os
+>>> os.path.basename(f)
+'foo.txt'
+>>> os.path.dirname(f)
+'C:\\X\\Data'
+>>> os.path.splitext(f)
+('C:\\X\\Data\\foo', '.txt')
+>>> os.path.splitext(os.path.basename(f))
+('foo', '.txt')
+
+>>> name , extension = os.path.splitext(os.path.basename(filename))
+-----------------------------------------------------------------------------------------
