@@ -1,31 +1,41 @@
+"""
+Here are some simple commands to use a remote computer using SSH. You can copy and paste data,
+Run and stop some program and do some other things according to your requirements from your computer
+using SSH.
+Note: The computers must be on the same network and you must have IP address and Password.
+"""
+
 oepn terminal in ubuntu 
-server 1  littro@pop-os   (near me) IP  
+server 1   (near me) IP  
 192.168.1.47
 
 
 server 2 (in meeting room ) IP
 92.168.1.13
 
+# 1- Login to remote computer from your computer terminal
 
- >> ssh -X xyz@192.168.1.13     #this is the name of the computer , 
+ $ssh -X xyz@192.168.1.13     #this is the name of the computer , 
  then enter the password   for example   user_xyz
  
  Now you can control that system normaly on your screen
  
- >> cd xyzDirectory 
- >> xdg-open 181226300.jpg      xdg-open to open a file. 
+ $cd xyzDirectory 
+ $xdg-open 181226300.jpg      xdg-open to open a file. 
  
- >> ctrl + d to exit
+ $ctrl + d to exit
 
+# 2- How to copy files or data from one system to another 
 
 >> copy files from one system to other .
 copy from B to A while loged in on A. 
-where scp is command fro copy ,  the second part is login details and file need to be coppied , the third part is destination.
-$scp xyz@192.168.1.24:./darknet-master/DualBand_backup/file.txt    ./yolov3_erikguo/dualBand2019/
+where scp is command for copy ,  the second part is login details and file need to be coppied , the third part is destination.
+
+$scp xyz@192.168.1.24: ~/darknet-master/DualBand_backup/file.txt    ./yolov3_erikguo/dualBand2019/
 
 
 copy from A to B while loged in on A
 
 where scp is command for copy, second is file need to be coppied,  third is destination with username.
 
-$scp /path/to/file   username@a:/path/to/destination
+$scp /path/to/file   username@a:~/path/to/destination
