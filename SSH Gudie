@@ -31,11 +31,11 @@ server 2 (in meeting room ) IP
 copy from B to A while loged in on A. 
 where scp is command for copy ,  the second part is login details and file need to be coppied , the third part is destination.
 
-$scp xyz@192.168.1.24: ~/darknet-master/DualBand_backup/file.txt    ./yolov3_erikguo/dualBand2019/
+$scp xyz@192.168.1.24:~/darknet-master/DualBand_backup/file.txt    ./yolov3_erikguo/dualBand2019/
 
 
 copy from A to B while loged in on A
 
 where scp is command for copy, second is file need to be coppied,  third is destination with username.
 
-$scp /path/to/file   username@a:~/path/to/destination
+$scp /path/to/file   xyz@IP:~/path/to/destination
