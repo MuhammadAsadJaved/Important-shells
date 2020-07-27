@@ -15,7 +15,7 @@ sets=[('2007', 'train'), ('2007', 'val')]
 
 #Here define number of classes
 
-classes = ["peroson", "car"]
+classes = ["person", "car"]
 
 
 def convert(size, box):
