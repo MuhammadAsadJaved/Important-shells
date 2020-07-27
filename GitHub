@@ -1,0 +1,30 @@
+This file contains some information about github project creation, update and delete functions.
+
+
+For the first time when you done your project in the local computer  this is how you upload project on the github 
+
+
+1- Create new repository on the github (better with same name with project, and do not initilize with readme file)
+
+2- open your project home folder in computer  in the cmd  and type these commands one by one 
+
+$rm -rf .git /S/Q   # it will delete existing .git contents 
+
+$git init    #it will initiliaze new .git for your project 
+
+$git add .     #it will add your all contents of the project to the .git 
+
+$git commit -m "First commit"    #this is the commit to track the changes  (you can give any name , it's first commit so i said "First commit")
+
+$git remote add origin https://github.com/MuhammadAsadJaved/MultispectralDetection.git   #the url is generated when you create repo on the github, use that URl and paste her
+
+$git push -u origin master     #finaly we push all the changes to the github repo,   after it's done, refresh the github page and your all contents are there. 
+
+
+##############additional steps  #################
+
+
+$git status   #to see github status 
+
+
+$git diff      #to check the difference of changes , what changes you have made 
