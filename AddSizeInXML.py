@@ -1,3 +1,7 @@
+#in some xmls' annotations, the size is missing mistakenly, and give an error during YOLO annoataions conversion, 
+#So first check all xmls's if the size is missing , then add size according to the rquirements, 
+#Note: Here we add fixed size i.e h=576, w=720 if it's  missing. You can loop over the images directory and add the exact size of each image.
+#run  $python AddSizeInXML.py
 import os
 import xml.etree.ElementTree as ET
 
@@ -18,9 +22,11 @@ for dirpaths, dirnames, filenames in os.walk(origin_ann_dir):
                 width = int(size.find("width").text)
                 height = int(size.find("height").text)
                 if (width == 0):
+                    print(filename)
                     width = "720"
 
                 if (height == 0):
+                    (print(filename0
                     height = "576"
 
                 #print(width, height, )
