@@ -155,7 +155,14 @@ $ find . -type f -iname \*.jpg -delete
 
 $ find . -maxdepth 1 -type f -print0 | head -z -n 100 | xargs -0 -r -- cp -t "/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/annN/" --
 
+-------------------------------------------------------------------------------------
+#Copy or move all files from a folder with a specific string to another folder 
+#for example there are  these files in a folder    (1_lwir.jpg,  12_lwir.jpg , 454_lwir.jpg , 1_visible.jpg , 15_visible.jpg, 645_visible.jp).
+#we want to move all _lwir images, so command is 
 
+$ mv  images/*_lwir.jpg*     /moved        #This will move all images contain _lwir.jpg   , no matter what they are start with  
+#if we want to move based on first n characters then we use ? mark.
+$ mv images/?_lwir.jpg*   /moved      #it will move just first one character + _lwir.jpg and move them, so in this case it will only move 1_lwir.jpg, we can increase ? mark accordinlgy. 
 
 --------------------------------------------------------------------------------
 
