@@ -131,7 +131,7 @@ convert images to videos
 
 cat visible/*.jpg | ffmpeg -f image2pipe -i - outputVisible.mp4
 
-
+---------------------------------------------------------------------------------------
 #convert one image extension to another , i.e  .jpg to .png . 
 install librarey  
 
@@ -140,7 +140,7 @@ $ sudo apt-get install imagemagick
 then run for a batch of files. 
 
 $ for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done
-
+----------------------------------------------------------------------------------------
 #delete all files with a certain extenstion from folder and subfolders
 
 cd <dir>
@@ -150,7 +150,13 @@ cd <dir>
 $ find . -maxdepth 1 -type f -iname \*.jpg -delete   
  #Note this will delete files from folder and it's sub folder, so first use command without -delete to make sure. 
 $ find . -type f -iname \*.jpg -delete   
+-----------------------------------------------------------------------------------------
 
+#Count number of files/images in folder and it's subfolders 
+
+$find sequences -type f | wc -l                  #sequences is folder name.
+
+------------------------------------------------------------------------------------------
 #copy first n files froma folder 
 
 $ find . -maxdepth 1 -type f -print0 | head -z -n 100 | xargs -0 -r -- cp -t "/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/annN/" --
