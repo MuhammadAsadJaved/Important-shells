@@ -28,3 +28,21 @@ for xmlFile in xmlFiles:
 no = len(os.listdir(Coppied))
 print("Coppied  %d  files successfully"  % no)
 
+
+'''
+#other shutil notes
+#Copy files:
+shutil.copyfile("oldfile","newfile") #oldfile and newfile can only be files
+shutil.copy("oldfile","newfile") #oldfile can only be a folder, newfile can be a file or a target directory
+ 
+#Copy folder:
+shutil.copytree("olddir","newdir") #olddir and newdir can only be directories, and newdir must not exist
+ 
+#Rename file (directory)
+os.rename("oldname","newname") #Files or directories use this command
+ 
+#Mobile file (directory)
+shutil.move("oldpos","newpos")
+shutil.move("D:/Knowledge Daily/latest/A coupon, change your address book information, would you like to?.pdf", "D:/Knowledge Daily/past/")
+
+'''
