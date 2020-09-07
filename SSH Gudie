@@ -7,8 +7,7 @@ Note: The computers must be on the same network and you must have IP address and
 
 oepn terminal in ubuntu 
 server 1   (near me) IP  (my computer
-192.168.1.103
-
+ssh -X littro@192.168.1.103
 
 server 2 (in meeting room ) IP
 192.168.1.13
