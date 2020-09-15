@@ -17,6 +17,11 @@ left = []
 width  =[]
 height = []
 
+#xmin = botom
+#ymin = left
+#xmax = xmin +width 
+#ymax = ymax +heigh 
+#407 30 277 210  0029.jpg
 
 with open('./detectionALL.txt') as in_file:
 
@@ -40,22 +45,25 @@ for i in range(0, len(name_list)):
     name = name_list[i].replace('.png', '.txt')
     print(name)
     with open(name, 'w') as out_file:
-        xmin = left[i]
-        ymin = bottom[i]
-        xmax = width[i] #+left[i])
-        xmax  = int(xmax)+int(xmin)
-        ymax = height[i] #+ bottom[i]
-        ymax = int(ymax)+ int(ymin)
+        xmin = float(bottom[i])
+        ymin = float(left[i])
+        xmax = float(width[i]) #+left[i])
+        #xmax  = int(xmax)+int(xmin)
+        xmax  = xmax+xmin
+        ymax = float(height[i]) #+ bottom[i]
+        #ymax = int(ymax)+ int(ymin)
+        ymax = ymax+ ymin
         #print(xmax)
         #print(ymax)
         clas = '0'
 
-        line = " ".join((clas, xmin, ymin, str(xmax) , str(ymax )))
+        line = " ".join((clas, str(xmin), str(ymin), str(xmax) , str(ymax)))
 
         #print(line)
 
         #out_file.write('0', " " , xmin , " ", ymin , " " ,xmax, " ", ymax)
         out_file.write(line)
+        out_file.write('\n')
         #print(out_file)
 
 
