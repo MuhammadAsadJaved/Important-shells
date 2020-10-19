@@ -79,5 +79,5 @@ Then you can use this shell.
 ```
 python Delete_single_object.py
 ```
-The resulting edited xmls will be saved in the given path. 
+The resulting edited xmls will be saved in the given folder
 
