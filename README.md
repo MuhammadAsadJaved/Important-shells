@@ -65,3 +65,19 @@ python specific_ObjectsCounter_in_xmls.py
 After the calculations , it will display total number of objects , number of objects for each class 
 and total number of objects other than these classes. 
 
+## Delete single objects from xml annotation
+
+This shell is used to delete a single object from all xml annotations in a folder. 
+For example if xmin is > xmax , that's mean this bounding box value have some problem 
+So you want to detelee this kind of all objects, or some similar conditions. 
+Then you can use this shell. 
+* We suppos you have xml annotations in a folder. 
+* Download [Delete_single_object.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py)
+* Change [input](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py#L9) and [output](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py#L10) xmls path. 
+* You can change conditions according to your need. 
+* Then run using 
+```
+python Delete_single_object.py
+```
+The resulting edited xmls will be saved in the given path. 
+
