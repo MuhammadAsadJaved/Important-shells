@@ -117,3 +117,24 @@ python count&Delete_XML_Dont_Have_objects.py
 ```
 The resulting edited xmls will be saved in the given folder
 
+https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py
+
+## Count and delete xml annotations that do not have objects.
+
+This shell is used to rename specific objects in xml annotations. 
+For example you want to rename `padestrian` to  `person` in xml annotations. 
+Then you can use this shell. 
+
+
+* We suppos you have xml annotations in a folder. 
+* Download [rename_objects_in_xml.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py)
+* Change [input path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L8) and [output_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L9)
+
+* Chane names you want to rename from line [21](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L21 to line [29](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L29)
+
+* Then run using 
+```
+python rename_objects_in_xml.py
+```
+The resulting edited xmls will be saved in the given folder
+
