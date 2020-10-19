@@ -83,7 +83,7 @@ Then you can use this shell.
 python Delete_single_object.py
 ```
 The resulting edited xmls will be saved in the given folder
-## Delete object from all xml annotations by name.
+## Delete specific object from all xml annotations by name.
 
 This shell is used to delete a specific objects by name from all xml annotations in a folder.
 For example you want to delte all 'person' objects or all 'car' objects from all xmls in a folder
