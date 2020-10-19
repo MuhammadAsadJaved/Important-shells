@@ -166,10 +166,14 @@ $ find . -maxdepth 1 -type f -print0 | head -z -n 100 | xargs -0 -r -- cp -t "/m
 #for example there are  these files in a folder    (1_lwir.jpg,  12_lwir.jpg , 454_lwir.jpg , 1_visible.jpg , 15_visible.jpg, 645_visible.jp).
 #we want to move all _lwir images, so command is 
 
-$ mv  images/*_lwir.jpg*     /moved        #This will move all images contain _lwir.jpg   , no matter what they are start with  
+$ mv  images/*_lwir.jpg*     /moved/        #This will move all images contain _lwir.jpg   , no matter what they are start with  
 #if we want to move based on first n characters then we use ? mark.
-$ mv images/?_lwir.jpg*   /moved      #it will move just first one character + _lwir.jpg and move them, so in this case it will only move 1_lwir.jpg, we can increase ? mark accordinlgy. 
+$ mv images/?_lwir.jpg*   /moved/      #it will move just first one character + _lwir.jpg and move them, so in this case it will only move 1_lwir.jpg, we can increase ? mark accordinlgy. 
 
+#if we want to copy or move files that's name contain a specific string for example there are images like  146ADAS211jpg ,  asbADAS2552.jpg , abd.jpg , 02255.jpg 
+#and we want to copy images that's name contain string ADAS , then we use 
+$ mv images/*ADAS*.jpg  /moved/
+#*ADAS*.jpg mean  no matter what is the start and what is at the end , if this name contains ADAS it will move/copy
 --------------------------------------------------------------------------------
 
 find chinese fonts in ubuntu 
