@@ -39,3 +39,29 @@ then you can use this shell.
 python countObjects_In_XML.py
 ```
 After the calculations , it will display total number of objects. 
+
+specific_ObjectsCounter_in_xmls.py
+
+## Count specific number of objects in xml annotation files. 
+
+
+
+This shell is used to count total number of object as well as total number of objects for each class in all xml annotations in a folder. 
+For example you have coco dataset xml annotations and you want to count how many person, car etc objects are there
+then you can use this shell. 
+
+* We suppos you have xml annotations in a folder. 
+* Download this shell first [specific_ObjectsCounter_in_xmls.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/specific_ObjectsCounter_in_xmls.py)
+
+* Nonw change [xmlPath](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/specific_ObjectsCounter_in_xmls.py#L8) in the in the shell. 
+* Currently I use only 7 classes, i.e person ,car , truck , bus , motobikes, bicycle and other, you can add more if conditions to calculate name. 
+* Note: The name should be same as name of the objects in the xml file, otherwise it will ignore in counting. 
+
+* Then run using 
+
+```
+python specific_ObjectsCounter_in_xmls.py
+```
+After the calculations , it will display total number of objects , number of objects for each class 
+and total number of objects other than these classes. 
+
