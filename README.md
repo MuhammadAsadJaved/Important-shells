@@ -5,6 +5,9 @@ The code is heavily borrowed from different internet sources.
 
 Seniors are welcomed for making correction / improvement.
 
+## Important Note:
+* It is recommended to always make a copy of your data before using any shell as a little mistake may delete your files/dataset.
+* The user is resonsible for any loss/problem caused by these shells. 
 
 ## Draw bounding boxes on all images
 
@@ -78,6 +81,23 @@ Then you can use this shell.
 * Then run using 
 ```
 python Delete_single_object.py
+```
+The resulting edited xmls will be saved in the given folder
+
+## Count and delete xml annotations that do not have objects. 
+
+Sometimes the xml annotations do not have any objects and it create problems during taining AI model. 
+So by running this shell you can see/delete xmls that do not have any objects. 
+
+* We suppos you have xml annotations in a folder. 
+* Download [count&Delete_XML_Dont_Have_objects.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/count%26Delete_XML_Dont_Have_objects.py)
+* Change [input path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/count%26Delete_XML_Dont_Have_objects.py#L9)
+* if you only want to print xmls names then run program without uncommenting line [30](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/count%26Delete_XML_Dont_Have_objects.py#L30) if you want also delete the file then uncomment line [30](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/count%26Delete_XML_Dont_Have_objects.py#L30)
+* Note: it is recommended to first only print file names, then verify a few and then delete by uncomming line 30. 
+
+* Then run using 
+```
+python count&Delete_XML_Dont_Have_objects.py
 ```
 The resulting edited xmls will be saved in the given folder
 
