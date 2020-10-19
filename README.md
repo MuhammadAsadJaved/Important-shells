@@ -83,6 +83,22 @@ Then you can use this shell.
 python Delete_single_object.py
 ```
 The resulting edited xmls will be saved in the given folder
+## Delete object from all xml annotations by name.
+
+This shell is used to delete a specific objects by name from all xml annotations in a folder.
+For example you want to delte all 'person' objects or all 'car' objects from all xmls in a folder
+
+Then you can use this shell. 
+* We suppos you have xml annotations in a folder. 
+* Download [delete_objects_in_xml_by_name.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py)
+* Change [input](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py#L8) and [output](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py#L9) folder path. 
+* then change object names you want to delte , Note: The name should be same according to the xml. 
+* Then run using 
+```
+python delete_objects_in_xml_by_name.py
+```
+The resulting edited xmls will be saved in the given folder
+
 
 ## Count and delete xml annotations that do not have objects. 
 
