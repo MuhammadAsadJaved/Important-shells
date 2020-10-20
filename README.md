@@ -138,3 +138,24 @@ python rename_objects_in_xml.py
 ```
 The resulting edited xmls will be saved in the given folder
 
+Convert_TXT_to_XML.py
+
+## Convert .txt (darknet) annotations to .xml (voc) annotations. 
+
+This shell is used to convert .txt annotations to .xml. 
+Then you can use this shell. 
+
+
+* We suppos you have xml annotations and corresponding images in two separate folders. 
+* Download [Convert_TXT_to_XML.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py)
+* Change [input_xml_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L8) and [input_imgages_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L9)
+
+* Chane names according to labels in [18](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L18) to line [27](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L27). Note: The generated xmls will be according to these labes
+for example the `0` from the txt  will be `person` in the xml, and so on. so use these labels according to your annotations. 
+
+* Then run using 
+```
+python Convert_TXT_to_XML.py
+```
+The xmls will be generated in the given output folder.
+
