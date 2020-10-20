@@ -166,9 +166,9 @@ Step 1:
 * We suppos you have xml annotations and corresponding images in two separate folders according to the follwing structure.
 
 * You should have following folder structure. 
-  Dataset/VOCdevkit/VOC2007/Annotations/  `Place annotations in this folder`
-  Dataset/VOCdevkit/VOC2007/JPEGImages/    `Place JPEGImages in this folder`
-  Dataset/VOCdevkit/VOC2007/ImageSets/Main/ `Empty folder`
+  1) Dataset/VOCdevkit/VOC2007/Annotations/  `Place annotations in this folder`
+  2) Dataset/VOCdevkit/VOC2007/JPEGImages/    `Place JPEGImages in this folder`
+  3) Dataset/VOCdevkit/VOC2007/ImageSets/Main/ `Empty folder`
   
   Now first we need to create list of images names, for that
 * Download [split_voc_train_test_from_imgAndAnnotations.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-1-split_voc_train_test_from_imgAndAnnotations.py)
