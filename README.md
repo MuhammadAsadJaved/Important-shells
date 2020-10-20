@@ -163,9 +163,8 @@ This shell is used to convert .xml annotations to .txt annotations.
 
 Step 1:
 
-* We suppos you have xml annotations and corresponding images in two separate folders according to the follwing structure.
+* We suppos you have xml annotations and corresponding images in separate folders according to the follwing structure.
 
-* You should have following folder structure. 
   1) Dataset/VOCdevkit/VOC2007/Annotations/  `Place annotations in this folder`
   2) Dataset/VOCdevkit/VOC2007/JPEGImages/    `Place JPEGImages in this folder`
   3) Dataset/VOCdevkit/VOC2007/ImageSets/Main/ `Empty folder`
@@ -182,7 +181,7 @@ It will create `train.txt` and `val.txt` in the Dataset/VOCdevkit/VOC2007/ImageS
 Step 2:
   
 * Download [Convert_xmlToTxt_voc_label.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-2-Convert_xmlToTxt_voc_label.py)  
-* Place Convert_xmlToTxt_voc_label.py in the `Dataset/` folder and run using 
+* Place Convert_xmlToTxt_voc_label.py in the `Dataset/` 
 * Then run using 
 ```
 python Convert_xmlToTxt_voc_label.py
