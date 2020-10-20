@@ -191,3 +191,20 @@ python Convert_xmlToTxt_voc_label.py
 ```
 The .txt annotations will be genreated in the `Dataset/VOCdevkit/VOC2007/labels/` folder. 
 
+## Convert .csv annotations to .txt annotations. 
+This shell is used to convert annotations from .csv file to .txt. 
+It can be used for:
+1) Read multiple .csv annotation files and create single .txt file. 
+2) Read multiple .csv annotation files and create corresponding multiple .txt files. 
+3) Read Multiple inputs from one csv file and generate one txt file containing all multiple outputs in it.
+You can change code according to your need. 
+
+* Download [Convert_csv2txt.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_csv2txt.py)  
+* Change [input_folder_name](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_csv2txt.py#L6) .
+* Then run using 
+```
+python Convert_csv2txt.py
+```
+The output .txt files be saved in the same folder with `output.txt` name. 
+
+
