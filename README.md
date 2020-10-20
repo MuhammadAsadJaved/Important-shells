@@ -143,12 +143,10 @@ Convert_TXT_to_XML.py
 ## Convert .txt (darknet) annotations to .xml (voc) annotations. 
 
 This shell is used to convert .txt annotations to .xml. 
-Then you can use this shell. 
 
-
-* We suppos you have xml annotations and corresponding images in two separate folders. 
+* We suppos you have txt annotations and corresponding images in two separate folders. 
 * Download [Convert_TXT_to_XML.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py)
-* Change [input_xml_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L8) and [input_imgages_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L9)
+* Change [input_txt_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L8) and [input_imgages_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L9)
 
 * Chane names according to labels in [18](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L18) to line [27](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py#L27). Note: The generated xmls will be according to these labes
 for example the `0` from the txt  will be `person` in the xml, and so on. so use these labels according to your annotations. 
@@ -158,4 +156,36 @@ for example the `0` from the txt  will be `person` in the xml, and so on. so use
 python Convert_TXT_to_XML.py
 ```
 The xmls will be generated in the given output folder.
+
+## Convert .xml (voc) annotations to .txt (darknet) annotations. 
+
+This shell is used to convert .xml annotations to .txt annotations. 
+
+Step 1:
+
+* We suppos you have xml annotations and corresponding images in two separate folders according to the follwing structure.
+
+* You should have following folder structure. 
+  Dataset/VOCdevkit/VOC2007/Annotations/  `Place annotations in this folder`
+  Dataset/VOCdevkit/VOC2007/JPEGImages/    `Place JPEGImages in this folder`
+  Dataset/VOCdevkit/VOC2007/ImageSets/Main/ `Empty folder`
+  
+  Now first we need to create list of images names, for that
+* Download [split_voc_train_test_from_imgAndAnnotations.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-1-split_voc_train_test_from_imgAndAnnotations.py)
+* Change input_images_path on [line 15](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-1-split_voc_train_test_from_imgAndAnnotations.py#L15) and list destinateion_path on [line 16 and 17](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-1-split_voc_train_test_from_imgAndAnnotations.py#L16)
+* Place split_voc_train_test_from_imgAndAnnotations.py in the `Dataset/VOCdevkit/VOC2007/` folder and run using 
+```
+python split_voc_train_test_from_imgAndAnnotations.py
+```
+It will create `train.txt` and `val.txt` in the Dataset/VOCdevkit/VOC2007/ImageSets/Main/ directory. 
+
+Step 2:
+  
+* Download [Convert_xmlToTxt_voc_label.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-2-Convert_xmlToTxt_voc_label.py)  
+* Place Convert_xmlToTxt_voc_label.py in the `Dataset/` folder and run using 
+* Then run using 
+```
+python Convert_xmlToTxt_voc_label.py
+```
+The .txt annotations will be genreated in the `Dataset/VOCdevkit/VOC2007/labels/` folder. 
 
