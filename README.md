@@ -182,6 +182,9 @@ Step 2:
   
 * Download [Convert_xmlToTxt_voc_label.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-2-Convert_xmlToTxt_voc_label.py)  
 * Place Convert_xmlToTxt_voc_label.py in the `Dataset/` 
+* Change [classes](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/2-2-Convert_xmlToTxt_voc_label.py#L18) .
+Note: The classes name should be same as in xml, only given names will be converted to .txt.
+      In the .txt the labels will be according to the classes position given in L18. for example `person` will be label `0` , `car` will be `1`. You can change according to your need. 
 * Then run using 
 ```
 python Convert_xmlToTxt_voc_label.py
