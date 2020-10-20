@@ -130,7 +130,7 @@ Then you can use this shell.
 * Download [rename_objects_in_xml.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py)
 * Change [input path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L8) and [output_path](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L9)
 
-* Chane names you want to rename from line [21](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L21 to line [29](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L29)
+* Chane names you want to rename from line [21](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L21) to line [29](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py#L29)
 
 * Then run using 
 ```
