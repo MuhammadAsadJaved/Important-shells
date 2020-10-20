@@ -119,7 +119,7 @@ The resulting edited xmls will be saved in the given folder
 
 https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects_in_xml.py
 
-## Count and delete xml annotations that do not have objects.
+## Rename objects in xml annotations.
 
 This shell is used to rename specific objects in xml annotations. 
 For example you want to rename `padestrian` to  `person` in xml annotations. 
