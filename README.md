@@ -11,7 +11,7 @@ Seniors are welcomed for making correction / improvement.
 
 ## Draw bounding boxes on all images
 
-This shell is used to draw bounding boxes on all images in a folder by reading their bounding box values from xml annotations. 
+This program is used to draw bounding boxes on all images in a folder by reading their bounding box values from xml annotations. 
 Like coco formate. 
 
 * We suppos you have images and corresponding xml annotations in two separate folder. 
@@ -28,9 +28,9 @@ Resulted images with boudning boxes will be saved in `bbimages` folder.
 
 ## Count number of total objects in PASCAL VOC .xml annotation files. 
 
-This shell is used to count total number of object in all xml annotations in a folder. 
+This program is used to count total number of object in all xml annotations in a folder. 
 For example you have coco dataset xml annotations and you want to count total number of objects
-then you can use this shell. 
+then you can use this program. 
 
 * We suppos you have xml annotations in a folder. 
 * Download this shell first [countObjects_In_XML.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/countObjects_In_XML.py)
@@ -47,9 +47,9 @@ specific_ObjectsCounter_in_xmls.py
 
 ## Count specific number of objects in PASCAL VOC .xml annotation files. 
 
-This shell is used to count total number of object as well as total number of objects for each class in all xml annotations in a folder. 
+This program is used to count total number of object as well as total number of objects for each class in all xml annotations in a folder. 
 For example you have coco dataset xml annotations and you want to count how many person, car etc objects are there
-then you can use this shell. 
+then you can use this program. 
 
 * We suppos you have xml annotations in a folder. 
 * Download this shell first [specific_ObjectsCounter_in_xmls.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/specific_ObjectsCounter_in_xmls.py)
@@ -68,10 +68,10 @@ and total number of objects other than these classes.
 
 ## Delete single object from all PASCAL VOC .xml annotations.
 
-This shell is used to delete a single object from all xml annotations in a folder. 
+This program is used to delete a single object from all xml annotations in a folder. 
 For example if xmin is > xmax , that's mean this bounding box value have some problem 
 So you want to detelee this kind of all objects, or some similar conditions. 
-Then you can use this shell. 
+Then you can use this program. 
 * We suppos you have xml annotations in a folder. 
 * Download [Delete_single_object.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py)
 * Change [input](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py#L9) and [output](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Delete_single_object.py#L10) xmls path. 
@@ -83,10 +83,10 @@ python Delete_single_object.py
 The resulting edited xmls will be saved in the given folder
 ## Delete specific name objects from all PASCAL VOC .xml annotations.
 
-This shell is used to delete a specific objects by name from all xml annotations in a folder.
+This program is used to delete a specific objects by name from all xml annotations in a folder.
 For example you want to delte all 'person' objects or all 'car' objects from all xmls in a folder
 
-Then you can use this shell. 
+Then you can use this program. 
 * We suppos you have xml annotations in a folder. 
 * Download [delete_objects_in_xml_by_name.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py)
 * Change [input](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py#L8) and [output](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/delete_objects_in_xml_by_name.py#L9) folder path. 
@@ -101,7 +101,7 @@ The resulting edited xmls will be saved in the given folder
 ## Count and delete PASCAL VOC .xml annotations that do not have objects. 
 
 Sometimes the xml annotations do not have any objects and it create problems during taining AI model. 
-So by running this shell you can see/delete xmls that do not have any objects. 
+So by running this program you can see/delete xmls that do not have any objects. 
 
 * We suppos you have xml annotations in a folder. 
 * Download [count&Delete_XML_Dont_Have_objects.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/count%26Delete_XML_Dont_Have_objects.py)
@@ -119,9 +119,9 @@ https://github.com/MuhammadAsadJaved/Important-shells/blob/master/rename_objects
 
 ## Rename objects in PASCAL VOC .xml annotations.
 
-This shell is used to rename specific objects in xml annotations. 
+This program is used to rename specific objects in xml annotations. 
 For example you want to rename `padestrian` to  `person` in xml annotations. 
-Then you can use this shell. 
+Then you can use this program. 
 
 
 * We suppos you have xml annotations in a folder. 
@@ -140,7 +140,7 @@ Convert_TXT_to_XML.py
 
 ## Convert .txt (Darknet) annotations to (PASCAL VOC) .xml annotations. 
 
-This shell is used to convert .txt annotations to .xml. 
+This program is used to convert .txt annotations to .xml. 
 
 * We suppos you have txt annotations and corresponding images in two separate folders. 
 * Download [Convert_TXT_to_XML.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_TXT_to_XML.py)
@@ -157,7 +157,7 @@ The xmls will be generated in the given output folder.
 
 ## Convert .xml (PASCAL VOC) annotations to .txt (Darknet) annotations. 
 
-This shell is used to convert .xml annotations to .txt annotations. 
+This program is used to convert .xml annotations to .txt annotations. 
 
 Step 1:
 
@@ -191,7 +191,7 @@ The .txt annotations will be genreated in the `Dataset/VOCdevkit/VOC2007/labels/
 
 ## Convert .csv annotations to .txt(Darknet) annotations. 
 
-This shell is used to convert annotations from .csv file to .txt. 
+This program is used to convert annotations from .csv file to .txt. 
 It can be used for:
 1) Read multiple .csv annotation files and create single .txt file. 
 2) Read multiple .csv annotation files and create corresponding multiple .txt files. 
@@ -219,4 +219,33 @@ sh Convert_mp3_to_pcm.sh
 ```
 The output .pcm audios will be saved in the same folder, then you can copy/move .pcm files to another folder. 
 
+
+## Rename all files in a folder.
+
+This program is used to rename all files in a folder.
+
+* Download [Rename_all_files_in_folder.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Rename_all_files_in_folder.py)
+* Change input folder name at [Line 3](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Rename_all_files_in_folder.py#L3)
+* Note: you can also change file extension according to your file extensions, the current program is for .jpg images. 
+* Then run using
+```
+python Rename_all_files_in_folder.py
+```
+The files will be renamed in the same folder. 
+
+
+## Rename all files in two different folders but keep the same sequence.
+
+This program is used to rename all files in two different folders but keep the same sequence , 
+For example if you want to rename images and their corresponding annotations in two different folders and keep the same sequences 
+Then you can use this program. 
+
+* Download [RenameAllFilesAndKeepSequence.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py)
+* Change input folders and output folders at [Line 23](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py#L23) to [Line 27](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py#L23)
+
+* Then run using
+```
+python RenameAllFilesAndKeepSequence.py
+```
+The rename images and xmls will be saved in the given output paths. 
 
