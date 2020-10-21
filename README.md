@@ -206,9 +206,6 @@ python Convert_csv2txt.py
 ```
 The output .txt files be saved in the same folder with `output.txt` name. 
 
-
-Convert_mp3_to_pcm.sh
-
 ## Convert .mp3 audio to .pcm. 
 This shell is used to convert all .mp3 audio files in a folder to .pcm format.
 
@@ -219,6 +216,17 @@ sh Convert_mp3_to_pcm.sh
 ```
 The output .pcm audios will be saved in the same folder, then you can copy/move .pcm files to another folder. 
 
+## Convert .jpg image .bgr. 
+
+This program is used to convert .jpg image .bgr.
+
+* Download [Ruyi-convert-jpg2bgr.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Ruyi-convert-jpg2bgr.py) 
+* Chnage image input and image output path at [Line 3](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Ruyi-convert-jpg2bgr.py#L3) and [Line 4](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Ruyi-convert-jpg2bgr.py#L4)
+* Then run this program using
+```
+python Ruyi-convert-jpg2bgr.py
+```
+The output .bgr image will be saved in the given path.
 
 ## Rename all files in a folder.
 
