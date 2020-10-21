@@ -1,4 +1,4 @@
-# Important-shells
+# Important Shells
 
 This repo contains some important python shells used for basic image/xml operations for custom datasets for deep learning models training.
 The code is heavily borrowed from different internet sources. 
@@ -46,8 +46,6 @@ After the calculations , it will display total number of objects.
 specific_ObjectsCounter_in_xmls.py
 
 ## Count specific number of objects in PASCAL VOC .xml annotation files. 
-
-
 
 This shell is used to count total number of object as well as total number of objects for each class in all xml annotations in a folder. 
 For example you have coco dataset xml annotations and you want to count how many person, car etc objects are there
@@ -192,6 +190,7 @@ python Convert_xmlToTxt_voc_label.py
 The .txt annotations will be genreated in the `Dataset/VOCdevkit/VOC2007/labels/` folder. 
 
 ## Convert .csv annotations to .txt(Darknet) annotations. 
+
 This shell is used to convert annotations from .csv file to .txt. 
 It can be used for:
 1) Read multiple .csv annotation files and create single .txt file. 
@@ -210,8 +209,8 @@ The output .txt files be saved in the same folder with `output.txt` name.
 
 Convert_mp3_to_pcm.sh
 
-## Convert .mp3 audo to .pcm. 
-This shell is used to convert to use .mp3 audio files to .pcm format.
+## Convert .mp3 audio to .pcm. 
+This shell is used to convert all .mp3 audio files in a folder to .pcm format.
 
 * Download [Convert_mp3_to_pcm.sh](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_mp3_to_pcm.sh)  
 * Then run this program in the same folder which contains .mp3 files. 
