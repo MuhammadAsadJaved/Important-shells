@@ -208,3 +208,16 @@ python Convert_csv2txt.py
 The output .txt files be saved in the same folder with `output.txt` name. 
 
 
+Convert_mp3_to_pcm.sh
+
+## Convert .mp3 audo to .pcm. 
+This shell is used to convert to use .mp3 audio files to .pcm format.
+
+* Download [Convert_mp3_to_pcm.sh](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Convert_mp3_to_pcm.sh)  
+* Then run this program in the same folder which contains .mp3 files. 
+```
+sh Convert_mp3_to_pcm.sh
+```
+The output .pcm audios will be saved in the same folder, then you can copy/move .pcm files to another folder. 
+
+
