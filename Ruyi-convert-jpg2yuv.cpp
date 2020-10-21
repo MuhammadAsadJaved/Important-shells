@@ -10,19 +10,19 @@ int main(int argv, char **argc)
 	IplImage *pstYUVImage = NULL;
 	FILE *fp = NULL;
 
-	pstImage = cvLoadImage("C://Users/Administrator/Desktop/Asad/FaceNew/5.jpg", CV_LOAD_IMAGE_COLOR);
-	fp = fopen("C://Users/Administrator/Desktop/Asad/FaceNew/5.yuv", "wb");
+	pstImage = cvLoadImage("C://Users/Administrator/Desktop/abc/FaceNew/5.jpg", CV_LOAD_IMAGE_COLOR);
+	fp = fopen("C://Users/Administrator/Desktop/abc/FaceNew/5.yuv", "wb");
 	pstYUVImage = cvCreateImage(cvSize(pstImage->width, pstImage->height), IPL_DEPTH_8U, 3);
 
 	cvCvtColor(pstImage, pstYUVImage, CV_BGR2YUV);
 
 	for (int i = 0; i < pstImage->width * pstImage->height; i++)
 	{
-		//提取Y分量
+		//鎻愬彇Y鍒嗛噺
 		fwrite(&pstYUVImage->imageData[i * 3], 1, 1, fp);
-		//提取U分量
+		//鎻愬彇U鍒嗛噺
 		//fwrite(&pstYUVImage->imageData[i*3+2], 1 , 1, fp);
-		//提取V分量
+		//鎻愬彇V鍒嗛噺
 		//fwrite(&pstYUVImage->imageData[i*3+1], 1 , 1, fp);
 	}
 
@@ -30,7 +30,7 @@ int main(int argv, char **argc)
 	{
 		for (int j = 0; j < pstImage->width; j = j + 2)
 		{
-			//提取U分量
+			//鎻愬彇U鍒嗛噺
 			fwrite(&pstYUVImage->imageData[3 * (i*pstImage->width + j) + 2], 1, 1, fp);
 		}
 	}
@@ -39,7 +39,7 @@ int main(int argv, char **argc)
 	{
 		for (int j = 0; j < pstImage->width; j = j + 2)
 		{
-			//提取V分量
+			//鎻愬彇V鍒嗛噺
 			fwrite(&pstYUVImage->imageData[3 * (i*pstImage->width + j) + 1], 1, 1, fp);
 		}
 	}
