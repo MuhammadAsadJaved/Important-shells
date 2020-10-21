@@ -1,7 +1,7 @@
 import cv2
 #path in windows
-imgpath = "C:\\Users\\Administrator\\Desktop\\Asad\\1.jpg"
-saveimg = r"C:\\Users\\Administrator\\Desktop\\Asad\\1.bgr"
+imgpath = "./imgin/1.jpg"
+saveimg = r"./imgout/1.bgr"
 #path in linux
 #imgpath = "./images/1.jpg"
 #saveimg = r"./images/1.bgr"
