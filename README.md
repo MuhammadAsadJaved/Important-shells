@@ -216,7 +216,7 @@ sh Convert_mp3_to_pcm.sh
 ```
 The output .pcm audios will be saved in the same folder, then you can copy/move .pcm files to another folder. 
 
-## Convert .jpg image to .bgr. 
+## Convert .jpg image to .bgr image.
 
 This program is used to convert .jpg image .bgr.
 
@@ -227,7 +227,7 @@ This program is used to convert .jpg image .bgr.
 python Ruyi-convert-jpg2bgr.py
 ```
 The output .bgr image will be saved in the given path.
-## Convert .jpg image to .yuv. 
+## Convert .jpg/RGB image to .yuv image.
 
 This program is used to convert .jpg image .bgr.
 
@@ -238,6 +238,18 @@ This program is used to convert .jpg image .bgr.
 use any .cpp editor to run this program. this is not a python program.
 ```
 The output .yuv image will be saved in the given path.
+
+## Convert .yuv image to .jpg/RGB image. 
+
+This program is used to convert all .yuv images in a folder to RGB images.
+* Download [Yuv2RGB.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Yuv2RGB.py) 
+* Chnage input folder and output folder path at [Line 13](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Yuv2RGB.py#L13) and [Line 14](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Yuv2RGB.py#L14)
+
+* Then run this program using
+```
+python Yuv2RGB.py
+```
+The output RGB images will be saved in the given path.
 
 ## Rename all files in a folder.
 
