@@ -281,7 +281,7 @@ python RenameAllFilesAndKeepSequence.py
 The rename images and xmls will be saved in the given output paths. 
 
 
-## check CUDA and cuDNN version in Ubuntu.
+## Check CUDA and cuDNN version in Ubuntu.
 These commands are used to check cuda and cudnn version installed on your ubuntu system. 
 
 Open a terminal with gui or by pressing `Ctrl + Alt + t`
@@ -289,12 +289,11 @@ Open a terminal with gui or by pressing `Ctrl + Alt + t`
 * To check cuda version , it will show something like this `Cuda compilation tools, release 10.0, V10.0.130`. Here cuda version is `10.0`.
 ```
 cat /usr/local/cuda/version.txt
-
 ```
-* To check cuDNN versio , it will show something like this 
-`#define CUDNN_MAJOR 7`
-`#define CUDNN_MINOR 4`
-`#define CUDNN_PATCHLEVEL 1`
+* To check cuDNN versio , it will show something like this</br>
+`#define CUDNN_MAJOR 7`</br>
+`#define CUDNN_MINOR 4`</br>
+`#define CUDNN_PATCHLEVEL 1`</br>
 Here your cuDNN version is 7.4.1
 ```
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
