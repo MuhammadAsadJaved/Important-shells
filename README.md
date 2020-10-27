@@ -304,3 +304,8 @@ It will show something like this</br>
 `#define CUDNN_MINOR 4`</br>
 `#define CUDNN_PATCHLEVEL 1`</br>
 Here your cuDNN version is 7.4.1
+
+* Note: if you are using cuDNN >=8 , they have changed version information in the separate file. so you can check with 
+```
+cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+```
