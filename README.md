@@ -311,7 +311,8 @@ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 ## Install cuda , cudnnn and caffe in Ubuntu. 
 
-* These two links 
+* These two links </br>
+
 https://github.com/yixindu1573/Caffe-Installation-Ubuntu-16.04-cuda-9.0-cudnn-v7
 
 or 
