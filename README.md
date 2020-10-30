@@ -309,3 +309,11 @@ Here your cuDNN version is 7.4.1
 ```
 cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
+## Install cuda , cudnnn and caffe in Ubuntu. 
+
+* These two links 
+https://github.com/yixindu1573/Caffe-Installation-Ubuntu-16.04-cuda-9.0-cudnn-v7
+
+or 
+
+https://github.com/IraAI/caffe-gpu-installation
