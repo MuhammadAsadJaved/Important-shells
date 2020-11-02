@@ -291,7 +291,7 @@ Open a terminal with gui or by pressing `Ctrl + Alt + t`
 cat /usr/local/cuda/version.txt
 ```
 It will show something like this `Cuda compilation tools, release 10.0, V10.0.130`. Here cuda version is `10.0`.
-* To check cuDNN versio.
+* To check cuDNN version if you installed using .tar file.
 ```
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 
@@ -308,6 +308,11 @@ Here your cuDNN version is 7.4.1
 * Note: if you are using cuDNN >=8 , they have changed version information in the separate file. so you can check with 
 ```
 cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+```
+* To check cuDNN version if you installed using .deb file.
+
+```
+cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 ## Install cuda , cudnnn and caffe in Ubuntu. 
 
