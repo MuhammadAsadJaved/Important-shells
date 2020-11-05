@@ -279,12 +279,12 @@ This program is used to rename all files in two different folders but keep the s
 For example if you want to rename images and their corresponding annotations in two different folders and keep the same sequences 
 Then you can use this program. 
 
-* Download [RenameAllFilesAndKeepSequence.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py)
-* Change input folders and output folders at [Line 23](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py#L23) to [Line 27](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/RenameAllFilesAndKeepSequence.py#L23)
+* Download [Rename_All_Files_And_Keep_Sequence.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Rename_All_Files_And_Keep_Sequence.py)
+* Change input folders and output folders at [Line 23](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Rename_All_Files_And_Keep_Sequence.py#L23) to [Line 27](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Rename_All_Files_And_Keep_Sequence.py#L23)
 
 * Then run using
 ```
-python RenameAllFilesAndKeepSequence.py
+python Rename_All_Files_And_Keep_Sequence.py
 ```
 The rename images and xmls will be saved in the given output paths. 
 
