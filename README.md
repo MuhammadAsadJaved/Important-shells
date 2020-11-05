@@ -251,6 +251,14 @@ python Yuv2RGB.py
 ```
 The output RGB images will be saved in the given path.
 
+## Convert all .png images to .jpg images and vice versa. 
+
+If you want to covnert all images in a folder from one extension i.e .jpg to .png or vice versa then you can use this command.
+```
+for i in images/*.png ; do convert "$i" "${i%.*}.jpg" ; done
+```
+The output will be saved in the same folder
+
 ## Rename all files in a folder.
 
 This program is used to rename all files in a folder.
