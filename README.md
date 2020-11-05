@@ -303,6 +303,22 @@ python combineAB.py  --fold_A ./A --fold_B ./B  --fold_AB ./AB
 ```
 Output combined images will be saved in AB folder
 
+## Copy files corresponding to files names from another input folder.
+
+Read some files froma folder and coppy relevent files or images from another folder. </br> 
+For example we want to copy images corresponding to 1.xml 2.xml 3.xml ..n.xml from a images folder which contains</br>
+thousands of images. so we do not need to search corresponding images manually. 
+Note: in this example it read .xml files and copy correspondig images, if you want to use for images to .xml then you </br>
+can just replace .xml to .jpg and .jpg to .xml at [Line 20 and 23](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/CopyFiles_or_images.py#L20)
+* Download [CopyFiles_or_images.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/CopyFiles_or_images.py)
+* Put images in two folders , i.e  A , B.
+
+* Then run using
+```
+python CopyFiles_or_images.py
+```
+The coppied files will be saved in the `Coppied` path. 
+
 ## Check CUDA and cuDNN version in Ubuntu.
 These commands are used to check cuda and cudnn version installed on your ubuntu system. 
 
