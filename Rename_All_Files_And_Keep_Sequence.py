@@ -20,11 +20,11 @@ def batchRenameFile(srcDirNamexml, srcDirNameimg, destDirNamexml, destDirNameimg
        i= i+ 1
 
 
-srcDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/annN/1/'  #input xmls folder
-srcDirNameimg = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/imgN/1/'   #input images folder
+srcDirNamexml = './annN/'  #input xmls folder
+srcDirNameimg = './imgN/'   #input images folder
 
-destDirNamexml = '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/3'    #output xmls folder
-destDirNameimg =  '/media/littro/ded08585-d8e8-4a37-9bd3-209b37b051fe/littro/LittroData/DualBand/visual/Resize/4'  #output images folder
+destDirNamexml = './ResizedAnn/'    #output xmls folder
+destDirNameimg =  './ResizedImgs/'  #output images folder
 
 
 batchRenameFile(srcDirNamexml,srcDirNameimg, destDirNamexml, destDirNameimg)
