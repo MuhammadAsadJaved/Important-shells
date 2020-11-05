@@ -281,6 +281,20 @@ python RenameAllFilesAndKeepSequence.py
 The rename images and xmls will be saved in the given output paths. 
 
 
+## Combine 2 Images into 1.
+
+This program is used to to combine all images in folder A with corresponding images in folder B.
+For example image1 in folder A will be combined with image1 in the folder B.
+
+* Download [Combine2ImagesInto1.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/Combine2ImagesInto1.py)
+* Put images in two folders , i.e  A , B.
+
+* Then run using
+```
+python combineAB.py  --fold_A ./A --fold_B ./B  --fold_AB ./AB
+```
+Output combined images will be saved in AB folder
+
 ## Check CUDA and cuDNN version in Ubuntu.
 These commands are used to check cuda and cudnn version installed on your ubuntu system. 
 
