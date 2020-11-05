@@ -311,8 +311,7 @@ thousands of images. so we do not need to search corresponding images manually.
 Note: in this example it read .xml files and copy correspondig images, if you want to use for images to .xml then you </br>
 can just replace .xml to .jpg and .jpg to .xml at [Line 20 and 23](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/CopyFiles_or_images.py#L20)
 * Download [CopyFiles_or_images.py](https://github.com/MuhammadAsadJaved/Important-shells/blob/master/CopyFiles_or_images.py)
-* Put images in two folders , i.e  A , B.
-
+* Change input , output folders.
 * Then run using
 ```
 python CopyFiles_or_images.py
