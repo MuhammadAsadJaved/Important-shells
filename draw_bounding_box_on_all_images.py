@@ -51,7 +51,7 @@ for xmlFile in xmlFiles:
         count+=1
         cv2.imwrite(bbimages + "/" + xmlFile.replace(".xml", "").replace(".jpg", "")+ ".jpg",
         img)  # saving
-        print('File %dth of / total %d'  % (no, len(xmlFiles)))
+        print('File %dth of total %d'  % (no, len(xmlFiles)))
         print(imgPath+ "----> Done")
         b+=1
         
