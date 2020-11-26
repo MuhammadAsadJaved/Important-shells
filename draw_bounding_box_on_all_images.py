@@ -16,7 +16,7 @@ xmlFiles = os.listdir(imagesPath)  # getting xml files
 imgFiles = os.listdir(xmlPath) # getting image files
 if not os.path.exists(bbimages):  # if output image folder does not exist, then make output image folder
     os.mkdir(bbimages)
-
+no =1
 for xmlFile in xmlFiles:
     imgPath = imagesPath+xmlFile.replace(".xml", "jpg")
     img = cv2.imread(imgPath)
@@ -51,8 +51,10 @@ for xmlFile in xmlFiles:
         count+=1
         cv2.imwrite(bbimages + "/" + xmlFile.replace(".xml", "").replace(".jpg", "")+ ".jpg",
         img)  # saving
+        print('File %dth of / total %d'  % (no, len(xmlFiles)))
         print(imgPath+ "----> Done")
         b+=1
-
+        
+    no+=1
 cv2.waitKey(0)
 cv2.destroyAllWindows()
