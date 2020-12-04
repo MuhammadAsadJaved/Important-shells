@@ -360,3 +360,7 @@ https://github.com/yixindu1573/Caffe-Installation-Ubuntu-16.04-cuda-9.0-cudnn-v7
 or 
 
 https://github.com/IraAI/caffe-gpu-installation
+
+## Compile OpenCV in Ubuntu 16.04
+
+https://note.youdao.com/ynoteshare1/index.html?id=0626a4c9f331f1a70e85f355ce410824&type=note
