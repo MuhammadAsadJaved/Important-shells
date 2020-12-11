@@ -361,6 +361,8 @@ or
 
 https://github.com/IraAI/caffe-gpu-installation
 
+http://installing-caffe-the-right-way.wikidot.com/start
+
 ## Compile OpenCV in Ubuntu 16.04
 
 https://note.youdao.com/ynoteshare1/index.html?id=0626a4c9f331f1a70e85f355ce410824&type=note
