@@ -22,3 +22,33 @@ Chnage train.prototxt and test.prototxt for custom classes .
     
     
     bottom: "layer105-conv"
+
+
+
+
+FeiQi notes
+
+1.检查系统opencv安装版本，该项目只支持3.3.1版本opencv
+2.检查protobuf版本，确定是2.6.1版本
+3.检查python版本，确定是2.7.12版本
+4.确定退出任何虚拟环境
+5.修改CMakeLists.txt第21行为自己opencv路径(旨在找到opencv3_3_1/share/OpenCV 也就是为了为该项目指定所用opencv)
+6.MobileNet-YOLO-master目录下新建文件夹build
+7.目录切换到MobileNet-YOLO-master/build 执行 cmake ..(执行此项操作时，需要对caffe的依赖项进行安装，不然各种错误) 再执行 make all -j123 编译完成后pycaffe也编译好了(切记 编译时候不要进任何虚拟环境 编译完想用pycaffe就需要进虚拟环境了);在这之后再安装anaconda，不然make all的时候会报错误，还得把libtiff库给移除（conda remove libtiff）。
+8.在/home/feiqi/MobileNet-YOLO-master/data/VOC_0702/VOC2007下使用脚本createtxt.py，测试：训练的比例是1：4,即percent为0.8。会在ImageSets/Main下生成4个文本分别是训练，测试，验证，训练+验证
+9.在上述路径下使用creat_list.sh，会在/home/feiqi/MobileNet-YOLO-master/data/VOC_0702/VOC2007下生成test.txt、trainval.txt、test_name_size.txt。
+10.在labelmap_voc.prototxt中修改类别名称。0为背景，不需要修改。在create_data1.sh中将路径设置正确。最主要的是运行create_data.sh中下面的子程序，只要下面的正确即可，可以将绝对路径放入对应的子程序中。运行成功后会在/home/feiqi/MobileNet-YOLO-master/data/VOC_0702/VOC2007下生成lmdb文件，里面会有test和trainval的lmdb。数据准备工作就做完了,接下来就是模型训练.
+11.模型训练需要准备五个文件,分别是
+(1)416_yolov3.caffemodel
+(2)yolov3-uav-train.prototxt
+yolov3-uav-train.prototxt中需要修改source的路径;batch_size的大小为2（目前调成16会报内存不够，默认是2）;修改label_map_file的路径;修改含有yolo上一层中num_output的数目[（类别+5）*3],一共有三处;num_class的数目为类别数，一共有三处;
+(3)yolov3-uav-test.prototxt
+yolov3-uav-test.prototxt中需要修改source的路径;修改label_map_file的路径;num_classes有两处，第一处与类别数目相等，第二处在类别数目上+1;修改含有yolo上一层中num_output的数目[(类别+5)*3],一共有三处;
+(4)solver_uav.prototxt
+修改test_iter，间距=(测试集数目/batch_size);test_interval为test_inter的4倍，上述是两个数据集按照1：4进行划分;
+将(1)(2)(3)(4)文件放在目录MobileNet-YOLO-master/models/darknet_yolov3下即可。
+(5)train_darknet_uav.sh
+路径修改为/home/feiqi/MobileNet-YOLO-master/models/darknet_yolov3，将.sh放在MobileNet-YOLO-master根目录下即可。
+12.在MobileNet-YOLO-master根目录下执行sh train_darknet_uav.sh即可完成训练步骤
+13.生成的权重文件会在models/darknet_yolov3/deploy_uav_中。
+
