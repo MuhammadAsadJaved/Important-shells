@@ -24,7 +24,10 @@ for dirpaths, dirnames, filenames in os.walk(origin_ann_dir):
         ymin = int(bndbox.find("ymin").text)
         ymax = int(bndbox.find("ymax").text)
 
-        if xmin ==0 or xmax==0 or ymin ==0 or ymax ==0:
+        #if xmin ==0 or xmax==0 or ymin ==0 or ymax ==0:
+        #  root.remove(obj)
+          
+        if xmin > xmax or ymin > ymax ==0:
           root.remove(obj)
 
 
